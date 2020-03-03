@@ -1,10 +1,10 @@
 <?php
-Route::set('/',function(){
-    echo "index";
+Route::set('index.php',function(){
+    HomeController::CreateView('HomeView');
 });
 
 Route::set('about-us',function(){
-    echo "about-us";
+    AboutUsController::CreateView('AboutUsView');
 });
 
 ?>
